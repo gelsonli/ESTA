@@ -1,0 +1,26 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input, select, button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}

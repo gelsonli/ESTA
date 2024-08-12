@@ -2,27 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta html-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estacionamento Seguro</title>
+    <title>Gerenciamento de Veículos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Gerenciamento de Veículos</h1>
     <div>
-        <input type="text" id="name" placeholder="Digite o Nome do Veículo">
+        <select id="name">
+            <option value="Carro">Carro</option>
+            <option value="Moto">Moto</option>
+            <option value="Van">Van</option>
+        </select>
+        <input type="text" id="model" placeholder="Digite o Modelo do Veículo">
         <input type="text" id="licence" placeholder="Digite a Placa do Veículo">
+        <input type="text" id="observation" placeholder="Observações do Veículo">
         <button id="send">Registrar</button>
     </div>
     <table>
         <thead>
             <tr>
                 <th>Veículo</th>
-                <th>Horário</th>
+                <th>Modelo</th>
                 <th>Placa</th>
+                <th>Observações</th>
+                <th>Entrada</th>
                 <th>Ações</th>
             </tr>
         </thead>
         <tbody id="garage"></tbody>
     </table>
+    <script src="./main.js"></script>
 </body>
-<script src="./main.js"></script>
 </html>
+
