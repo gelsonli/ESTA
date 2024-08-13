@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>Gerenciamento de Veículos</h1>
-    <div>
+    <div class="form-container">
+        <div id="spots-remaining">Vagas: 100</div>
         <select id="name">
             <option value="Carro">Carro</option>
             <option value="Moto">Moto</option>
@@ -27,12 +28,13 @@
                 <th>Placa</th>
                 <th>Observações</th>
                 <th>Entrada</th>
-                <th>Ações</th>
+                <th>Baixa na Saída</th>
             </tr>
         </thead>
         <tbody id="garage"></tbody>
     </table>
-    <script src="./main.js"></script>
+    <button id="generate-summary">Gerar Resumo</button>
+    <script src="main.js"></script>
 </body>
 </html>
 
